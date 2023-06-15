@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("./raw/seriearaw.csv").drop(columns="Unnamed: 0")
+df = pd.read_csv("./raw/seriearaw.csv").drop(columns="RowNo")
 
 df = df.groupby(["Year", "Winner"]).count()["Result"]
 
