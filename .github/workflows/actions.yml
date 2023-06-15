@@ -1,8 +1,9 @@
 name: Run Python Script
 
 on:
-  schedule:
-    - cron: "* * * * *"
+  push:
+    paths:
+      - raw/**.csv
 
 jobs:
   run-python:
@@ -17,14 +18,16 @@ jobs:
           python-version: "3.11"
 
       - name: Run Python Scriptx
-        run: python3 trialOnActions.py
+        run: |
+          pip install pandas==2.0.2
+          python3 transform.py
       
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git diff-index --quiet HEAD || (git commit -a -m "Processed Raw" --allow-empty)
       
       - name: push changes
         uses: ad-m/github-push-action@master
