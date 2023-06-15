@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run Python Script
+      - name: Run Python Scriptx
         run: python3 trialOnActions.py
       
       - name: commit files
