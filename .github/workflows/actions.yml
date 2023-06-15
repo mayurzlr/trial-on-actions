@@ -2,8 +2,10 @@ name: Run Python Script
 
 on:
   push:
-    paths:
-      - raw/**.csv
+    branches:
+      - master
+    paths: 
+      - "raw/**"
 
 jobs:
   run-python:
