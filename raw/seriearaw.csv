@@ -1,5 +1,4 @@
-,Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,Winner,Result,Year
-0,I1,29/08/93,Atalanta,Cagliari,5,2,H,Atalanta,HomeTeamWin,1993
+RowNo,Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,Winner,Result,Year
 1,I1,29/08/93,Genoa,Roma,2,0,H,Genoa,HomeTeamWin,1993
 2,I1,29/08/93,Inter,Reggiana,2,1,H,Inter,HomeTeamWin,1993
 3,I1,29/08/93,Juventus,Cremonese,1,0,H,Juventus,HomeTeamWin,1993
