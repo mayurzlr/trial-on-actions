@@ -1,11 +1,8 @@
 name: Transform Raw
 
 on:
-  push:
-    branches:
-      - master
-    paths: 
-      - "raw/**"
+  schedule:
+    - cron: "*/6 * * * *"
 
 jobs:
   run-python:
