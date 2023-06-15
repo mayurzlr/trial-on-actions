@@ -1,0 +1,38 @@
+name: Transform Raw
+
+on:
+  push:
+    branches:
+      - master
+    paths: 
+      - "raw/**"
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Run Python Scriptx
+        run: |
+          pip install pandas==2.0.2
+          python3 transform.py
+      
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "Processed Raw" --allow-empty)
+      
+      - name: push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
