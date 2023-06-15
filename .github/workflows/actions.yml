@@ -1,7 +1,7 @@
 name: Run Python Script
 
 on:
-  create:
+  push:
     paths:
       - raw/**.csv
 
