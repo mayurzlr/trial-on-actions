@@ -23,3 +23,4 @@ zipfile.extractall(f"./raw/{foldername}/")
 
 os.system(f"cp ./raw/{foldername}/* ./raw")
 os.system(f"rm -r ./raw/{foldername}/*")
+os.system(f"rmdir ./raw/{foldername}")
