@@ -13,3 +13,17 @@ results.csv      2023-06-18 23:03:37.343707
 seasons.csv      2023-06-18 23:03:37.355773
 sprint_results.csv      2023-06-18 23:03:37.359800
 status.csv      2023-06-18 23:03:37.359800
+status.csv      2023-06-18 17:41:53.640735
+qualifying.csv      2023-06-18 17:41:53.677138
+races.csv      2023-06-18 17:41:53.688508
+constructor_results.csv      2023-06-18 17:41:53.718897
+constructors.csv      2023-06-18 17:41:53.721667
+driver_standings.csv      2023-06-18 17:41:53.813650
+results.csv      2023-06-18 17:41:53.956715
+lap_times.csv      2023-06-18 17:41:55.276075
+constructor_standings.csv      2023-06-18 17:41:55.323243
+seasons.csv      2023-06-18 17:41:55.325417
+drivers.csv      2023-06-18 17:41:55.331903
+pit_stops.csv      2023-06-18 17:41:55.360362
+circuits.csv      2023-06-18 17:41:55.363220
+sprint_results.csv      2023-06-18 17:41:55.366103
