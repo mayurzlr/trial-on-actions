@@ -1,6 +1,7 @@
 # importing necessary modules
 import requests, zipfile
 from io import BytesIO
+import os
 
 print("Downloading started")
 
@@ -18,4 +19,7 @@ print("Downloading Completed")
 
 # extracting the zip file contents
 zipfile = zipfile.ZipFile(BytesIO(req.content))
-zipfile.extractall(f"./{foldername}/")
+zipfile.extractall(f"./raw/{foldername}/")
+
+os.system(f"cp ./raw/{foldername}/* ./raw")
+os.system(f"rm -r ./raw/{foldername}/*")
